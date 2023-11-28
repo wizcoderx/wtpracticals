@@ -1,7 +1,7 @@
 <!--The follwowing code is practical on 28/11/2023-->
 
 <!--The following is the first form validation
-    This code checks if the entred input is valid or not (Like if inout is blank or not :)) 
+    If the input box is getting some text inside it will change the color to green
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -12,20 +12,26 @@
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 </head>
+<style>
+    input.ng-invalid {
+        background-color: red;
+    }
+    input.ng-valid {
+        background-color: green;
+    }
+</style>
 <body ng-app="">
-    <h1>Required: Use the blah blah</h1>
-    <p>Try writing in the input</p>
 
+    <h2>
+        Try writing in the input field:
+    </h2>
     <form name="myForm">
-        <input ng-model="myInput" name="myInput" required>
+        <input type="text" name="myName" ng-model="myName" required>
     </form>
 
-    <h1>
-        The input valid stage is :
-    </h1>
-    <h1>
-        {{myForm.myInput.$valid}}
-    </h1>
+    <p>
+        The input field requires content, and will therefore become green when you write in it.
+    </p>
 
 </body>
 </html>

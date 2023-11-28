@@ -1,7 +1,7 @@
 <!--The follwowing code is practical on 28/11/2023-->
 
 <!--The following is the first form validation
-    This code checks if the entred input is valid or not (Like if inout is blank or not :)) 
+    This code checks if the entered email is valid or not
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -13,15 +13,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 </head>
 <body ng-app="">
-    <h1>Required: Use the blah blah</h1>
-    <p>Try writing in the input</p>
+    <h1>Email: The code is designed to check if the entred email is true or not</h1>
+    <p><b>NOTE: Starting point will always be True even if you have not entred anything in it :)</b></p>
 
     <form name="myForm">
-        <input ng-model="myInput" name="myInput" required>
+        <input type= "email" ng-model="myInput" name="myInput" required>
     </form>
 
     <h1>
-        The input valid stage is :
+        The email valid stage is :
     </h1>
     <h1>
         {{myForm.myInput.$valid}}
