@@ -1,0 +1,29 @@
+<!--The follwowing code is practical on 28/11/2023-->
+
+<!--The follwowing code is practical on 28/11/2023-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="">
+    <h1>Required: Use the blah blah</h1>
+    <p>Try writing in the input</p>
+
+    <form name="myForm">
+        <input ng-model="myInput" name="myInput" required>
+    </form>
+
+    <h1>
+        The input valid stage is :
+    </h1>
+    <h1>
+        {{myForm.myInput.$valid}}
+    </h1>
+
+</body>
+</html>
